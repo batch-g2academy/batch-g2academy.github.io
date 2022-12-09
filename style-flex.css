@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: grey;
+    margin: 40px;
+    font-size: 40px;
+    display: flex;
+    align-items: center; /* cross axis*/
+    justify-content:space-around; /*main axis */
+    /* flex-direction: row-reverse; */
+    height: 800px;
+}
+
+.box1 {
+    background-color: aqua;
+}
+
+.box2 {
+    background-color: aquamarine;
+}
+
+.box3 {
+    background-color: burlywood;
+}
+
+.box4 {
+    background-color: cadetblue;
+    height: 150px;
+}
+
+.box5 {
+    background-color: greenyellow;
+}
+
+.box6 {
+    background-color: cornflowerblue;
+}
+
+@media screen and (max-width: 1077px){
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
